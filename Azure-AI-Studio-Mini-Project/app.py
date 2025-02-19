@@ -14,8 +14,8 @@ def allowSelfSignedHttps(allowed):
 allowSelfSignedHttps(True)
 
 # Azure endpoint details
-url = ''
-api_key = ''
+url = 'https://plmoros-1958-dgwha.westeurope.inference.ml.azure.com/score'
+api_key = '5iDVKNsvWlgBeun50tcd7utFBp0fldaubmDKrADophJ6WvRIigcbJQQJ99BBAAAAAAAAAAAAINFRAZML4geb'
 
 @app.route('/')
 def home():
