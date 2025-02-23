@@ -36,7 +36,7 @@ def ask():
         result_json = json.loads(result)
         print(result_json)
         answer = result_json.get('answer', 'No answer provided.')
-        result_value = result_json['result']
+        result_value = result_json['Output']
         return jsonify({'answer': result_value})
     except urllib.error.HTTPError as error:
         return jsonify({'error': f"Request failed with status code: {error.code}"})
